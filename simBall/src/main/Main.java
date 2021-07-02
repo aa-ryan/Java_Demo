@@ -2,7 +2,8 @@ package src.main;
 
 import java.awt.*;
 import javax.swing.*;
-import src.render.*;
+
+import src.render.*;   // import members from src/render/Balls.java
 
 public class Main {
 
@@ -27,14 +28,14 @@ public class Main {
                     ex.printStackTrace();
                 }
 
-                JFrame frame = new JFrame("BALLS");
-                frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                frame.setLayout(new BorderLayout());
+                JFrame jframe = new JFrame("BALLiSIM");
+                jframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                jframe.setLayout(new BorderLayout());  // construct new boderlayout with no gaps between components
                 Balls balls = new Balls();
-                frame.add(balls);
-                frame.setSize(400, 400);
-                frame.setVisible(true);
-                frame.setResizable(false);
+                jframe.add(balls);           // adding elements
+                jframe.setSize(500, 500);
+                jframe.setVisible(true);
+                jframe.setResizable(false);
 
                 new Thread(new BounceEngine(balls)).start();
 
@@ -42,6 +43,3 @@ public class Main {
         });
     }
 }
-
-
-

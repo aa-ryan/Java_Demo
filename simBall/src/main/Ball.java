@@ -1,4 +1,4 @@
-package src.main;
+package src.main;   // need to specify package even if in same folder to use function of other *.java files
 
 import java.awt.*;
 import javax.swing.*;
@@ -8,15 +8,15 @@ public class Ball {
 
     private Color color;
     private Point location;
-    private Dimension size;
     private Point speed;
+    private Dimension size;
 
     public Ball(Color color) {
 
         setColor(color);
 
         speed = new Point(10 - randomgen.random(20), 10 - randomgen.random(20));
-        size = new Dimension(30, 30);
+        size = new Dimension(35, 35);
 
     }
 
