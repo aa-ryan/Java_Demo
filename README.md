@@ -34,6 +34,7 @@
 - "javac" compiles the java program
 - "&&" operator works as expected if LHS is true (means there is file named hello.java to compile) then move next command (in this case that is "java hello")
 - Make sure to while running "java YourFile" contains MAIN class otherwise java will throw error. (don't write name as YourFile.class)
+- What to do when building a project and all is it even possible without plugins and stuff ?
 
 ## simBall
 
