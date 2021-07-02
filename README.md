@@ -1,8 +1,9 @@
 ### Java Demo
 - Learn Basic of Unix/Linux
 - Compiling and Exection in CLI based environment
-- Ball Bounce Animation (swing and awt)
+- BalliSim for
 	* Package management
+- Making jar files
 
 ####  Basic Unix commands
 - cd => Change Directory
@@ -38,3 +39,38 @@
 
 * Since not using any IDE, we will have to place packages manually and understand what's going on, how packages and import works.
 * Careful while naming class and deciding thier visibility.
+* imports and packages.
+
+
+* what about messy class files ?
+	> When on *nix do it nix-way, delete all *.class file recursively 
+	 ```bash
+	 find . -name "*.class" -type f -delete
+	 ```
+
+* What if you don't want to share your code ?
+	> Solution is to make a jar file
+	```bash
+	jar cvmf manifest.txt filename.jar ./src/pkg1/*.class ./src/pkg2/*.class
+	```
+	> what is "cvmf" ?
+		>> c = create  
+		>> v = verbose standard output  
+		>> m = manifest file added  
+		>> f = archive filename "filename.jar"  
+
+	> what is manifest.txt ?  
+		>> It contains path of main() function  
+		>> Main-class: path/to/main  (it uses filename so don't append .class or .java or anything)</br>
+		>> [ more ]( https://docs.oracle.com/javase/tutorial/deployment/jar/manifestindex.html ) on mainfest.txt
+
+
+* What to do when your just want to run your code not and not make some fancy jar file ?
+	- Do this
+		```bash
+			javac path/to/class_containing_main_function
+		```
+	- Use tab-completion for this step much easssier (avoid names like Main$1 it's for function in class)
+		```bash
+			java src.main.Main  
+		```
