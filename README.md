@@ -34,6 +34,7 @@
 - "&&" operator works as expected if LHS is true (means there is file named hello.java to compile) then move next command (in this case that is "java hello")
 - Make sure to while running "java YourFile" contains MAIN class otherwise java will throw error. (don't write name as YourFile.class)
 
-## Snake Game
+## simBall
 
 * Since not using any IDE, we will have to place packages manually and understand what's going on, how packages and import works.
+* Careful while naming class and deciding thier visibility.
