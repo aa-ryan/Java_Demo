@@ -49,8 +49,18 @@
 	 find . -name "*.class" -type f -delete
 	 ```
 
+* What to do to compile your code ?
+	- Do this
+		```bash
+			javac path/to/class_containing_main_function
+		```
+	- Use tab-completion for this step much easssier (avoid names like Main$1 it's for function in class)
+		```bash
+			java src.main.Main  
+		```
 * What if you don't want to share your code ?
 	> Solution is to make a jar file
+	> NOTE: making jar does'nt recompile your code rather it just uses existing *.class.
 	```bash
 	jar cvmf manifest.txt filename.jar ./src/pkg1/*.class ./src/pkg2/*.class
 	```
@@ -64,14 +74,8 @@
 		>> It contains path of main() function  
 		>> Main-class: path/to/main  (it uses filename so don't append .class or .java or anything)</br>
 		>> [ more ]( https://docs.oracle.com/javase/tutorial/deployment/jar/manifestindex.html ) on mainfest.txt
+	
+* Your don't want run this many commands again and again ? Do it in one go?
+	- Create a make file.
 
 
-* What to do when your just want to run your code not and not make some fancy jar file ?
-	- Do this
-		```bash
-			javac path/to/class_containing_main_function
-		```
-	- Use tab-completion for this step much easssier (avoid names like Main$1 it's for function in class)
-		```bash
-			java src.main.Main  
-		```
