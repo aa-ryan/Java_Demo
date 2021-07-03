@@ -1,6 +1,4 @@
-.PHONY = compile run mjar clean
-
-CC = javac
+CC = javac   # compiler to use
 
 compile:
 	@echo "Compiling Using JavaC"
