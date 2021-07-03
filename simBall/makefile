@@ -8,7 +8,7 @@ compile:
 
 run:
 	@echo "Executing..."
-	java src.main.Main  # Path to main class
+	${CC} src/main/Main.java && java src.main.Main  # Path to main class
 
 mjar:
 	@echo "Creating jar"
