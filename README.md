@@ -77,5 +77,6 @@
 	
 * Your don't want run this many commands again and again ? Do it in one go?
 	- Create a make file.
+	- Can automate all the work see makefile.
 
 
