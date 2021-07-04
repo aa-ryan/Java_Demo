@@ -92,6 +92,7 @@ class BounceEngine implements Runnable {
 
         }
 
+        /* thanks to r/programming discord */
         while (getParent().isVisible()) {
 
             /* Repaint the balls pen... */
