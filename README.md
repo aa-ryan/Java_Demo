@@ -1,7 +1,8 @@
 ### Java Demo
+To get everything working in Unix environment we just need learn some basics of how a SHELL works.
 - Learn Basic of Unix/Linux
 - Compiling and Exection in CLI based environment
-- BalliSim for
+- BalliSim for (Package management using existing project)
 	* Package management
 - Making jar files
 - Automating processes using makefile
@@ -22,7 +23,7 @@
 
 #### Command Line Based Editors to use
 
-- Vim, nano, gedit(not on MacOS)
+- Vim and emacs like nano
 - I personally use Vim
 
 ###### Simple Hello World program to demonstrate compiling and execution in Unix
