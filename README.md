@@ -4,6 +4,7 @@
 - BalliSim for
 	* Package management
 - Making jar files
+- Automating processes using makefile
 
 ####  Basic Unix commands
 - cd => Change Directory
