@@ -115,6 +115,7 @@ class BounceEngine implements Runnable {
             try {
                 Thread.sleep(100);
             } catch (InterruptedException ex) {
+                System.out.println("Check Repaint");
                 ex.printStackTrace();
             }
 

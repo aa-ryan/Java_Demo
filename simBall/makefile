@@ -1,16 +1,17 @@
-CC = javac   # compiler to use
+CC = javac
 
 compile:
-	@echo "Compiling Using JavaC"
-	${CC} src/main/Main.java  # Path to main file
+	@echo "compiling..." 
+	${CC} src/main/Main.java
 
 run:
-	@echo "Executing..."
-	${CC} src/main/Main.java && java src.main.Main  # Path to main class
+	@echo "Execution "
+	${CC} src/main/Main.java && java src.main.Main
 
-mjar:
+jarmake:
 	@echo "Creating jar"
 	jar cvmf manifest.txt simBall.jar ./src/main/*.class ./src/render/*.class
+
 
 clean:
 	@echo "Cleaning *.class files"
